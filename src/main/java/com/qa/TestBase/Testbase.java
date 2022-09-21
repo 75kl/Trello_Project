@@ -2,6 +2,7 @@ package com.qa.TestBase;
 
 import java.time.Duration;
 
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,6 +22,7 @@ public class Testbase {
 	public static WebDriver driver;
 	public static Actions action;
 	public static LoginPage login;
+	public static Point p;
 	public static CreateBoard cb;
 	public static Board_1 b;
 	public String browse = "chrome";
@@ -53,11 +55,11 @@ public class Testbase {
 		
 	}
 	
-//	@AfterMethod
-//	public void tearDown()
-//	{
-//		driver.quit();
-//	}
+	@AfterMethod
+	public void tearDown()
+	{
+		driver.quit();
+	}
 		
 }
 

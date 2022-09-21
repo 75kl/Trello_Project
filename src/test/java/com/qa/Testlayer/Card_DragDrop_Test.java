@@ -46,6 +46,7 @@ public class Card_DragDrop_Test extends com.qa.TestBase.Testbase {
 		//drag and drop
 		b.listclose();
 		b.draganddrop();
+		b.getXandY();
 	}
 
 }

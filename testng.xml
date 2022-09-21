@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="RegSuite">
+<suite name="Reg_Trello_Suite">
 
 <listeners>
 	<listener class-name = "com.qa.Utility.Listener"/>
 
 </listeners>
 
-  <test thread-count="5" name="RegTest">
+  <test thread-count="5" name="Reg_Trello_Test">
     <classes>
       <class name="com.qa.Testlayer.Card_DragDrop_Test"/>
     </classes>
-  </test> <!-- RegTest -->
-</suite> <!-- RegSuite -->
+  </test> <!-- Reg_Trello_Test -->
+</suite> <!-- Reg_Trello_Suite -->

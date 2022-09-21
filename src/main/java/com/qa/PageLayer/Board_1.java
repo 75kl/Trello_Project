@@ -1,5 +1,6 @@
 package com.qa.PageLayer;
 
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -94,6 +95,17 @@ public class Board_1 extends Testbase{
 	public void draganddrop()
 	{
 		action.dragAndDrop(CardA, droplist).build().perform();
+	}
+	
+	@FindBy(xpath = "//*[@id=\"board\"]/div[2]/div/div[2]/a/div[3]")
+	private WebElement CardAxis;
+	
+	public void getXandY()
+	{
+		int x = CardAxis.getLocation().getX();
+		System.out.println(x);
+		int y = CardAxis.getLocation().getY();
+		System.out.println(y);
 	}
 	
 	
