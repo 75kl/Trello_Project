@@ -102,6 +102,7 @@ public class Board_1 extends Testbase{
 	
 	public void getXandY()
 	{
+		driver.navigate().refresh();
 		int x = CardAxis.getLocation().getX();
 		System.out.println(x);
 		int y = CardAxis.getLocation().getY();

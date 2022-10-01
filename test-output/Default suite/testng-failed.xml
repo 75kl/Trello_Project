@@ -5,6 +5,7 @@
     <classes>
       <class name="com.qa.Testlayer.Card_DragDrop_Test">
         <methods>
+          <include name="tearDown"/>
           <include name="dragAndDrop"/>
           <include name="setup"/>
         </methods>
